@@ -1,0 +1,72 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:utext="${RegistrationForm}">Student Registration Form</title>
+
+
+
+<!-- <link th:href="/webjars/bootstrap/4.5.2/css/bootstrap.min.css"
+	rel="stylesheet" /> -->
+
+
+</head>
+<body>
+	<form th:object="${student}" method="post">
+
+		<!--  <div><h4>SID<input type="text" th:field="*{sid}"/></div></h4>
+<div><h4>SNAME<input type="text" th:field="*{sname}"/></div></h4>
+<div><h4>SBRANCH</h4><input type="text" th:field="*{sbranch}"/></div>
+<div><h4>SMAIL</h4><input type="text" th:field="*{smail}"/></div>-->
+
+		<table border="1">
+
+			<tr>
+				<td>SID :</td>
+				<td><input type="text" th:field="*{sid}" /></td>
+			</tr>
+			<tr>
+				<td>SNAME :</td>
+				<td><input type="text" th:field="*{sname}" /></td>
+			</tr>
+			<tr>
+				<td>SBRANCH :</td>
+				<td><input type="text" th:field="*{sbranch}" /></td>
+			</tr>
+			<tr>
+				<td>SMAIL :</td>
+				<td><input type="text" th:field="*{smail}" /></td>
+			</tr>
+
+
+
+
+		</table>
+		<br>
+		<!-- <input type="submit" value=""/> -->
+		<div class="btn-group">
+			<button type="submit" class="btn btn-success">Submit</button>
+		</div>
+
+	</form>
+
+</body>
+</html>
+
+
+
+
+<!--  <html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:utext="${RegistrationForm}">Student Registration Form</title>
+</head>
+<body>
+<form th:object="${student}" method="post" >
+
+<div>Student Id<input type="text" th:field="*{sid}"/></div>
+<div>Student name<input type="text" th:field="*{sname}"/></div>
+<div>Student branch<input type="text" th:field="*{sbranch}"/></div>
+<div>Student mail<input type="text" th:field="*{smail}"/></div>
+<div><input type="submit" value="Submit"/></div>
+</form>
+
+</body>
+</html> -->
